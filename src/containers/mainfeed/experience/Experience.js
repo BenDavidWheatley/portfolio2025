@@ -4,7 +4,7 @@ import Style from './experience.module.css';
 
 function Experience() {
     return (
-        <section data-testid="experience" className={Style.experienceContainer}>
+        <section id='experience' data-testid="experience" className={Style.experienceContainer}>
 
             {/* Dates container */}  
             <div className={Style.datesContainer}>

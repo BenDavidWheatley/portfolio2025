@@ -3,8 +3,8 @@ import Styles from './footer.module.css';
 
 function Footer() {
     return (
-        <section data-testid="footer" >
-                <p>i am the footer</p>
+        <section data-testid="footer" className={Styles.footer}>
+                <p>Designed in Figma - built in react ©2025</p>
         </section>
     )
 }

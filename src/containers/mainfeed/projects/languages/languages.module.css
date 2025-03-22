@@ -2,15 +2,20 @@
 
 
 .languageContainer {
-    height: 30px;
+    height: 24px;
     width: 126px;
     border-radius: 100px;
+    display: flex;
 }
 .languageContainer p {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 12px;
+    
+    text-transform: uppercase;
+    align-self: center;
     text-align: center;
+    margin: auto;
+
 }
 .hovered  {
     background-color: #101116;

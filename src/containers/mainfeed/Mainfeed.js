@@ -13,6 +13,10 @@ function Mainfeed() {
             <Projects />
             <Experience />
             <Experience />
+            <Experience />
+            <Experience />
+            <Experience />
+            <Experience />
         </section>
     )
 }

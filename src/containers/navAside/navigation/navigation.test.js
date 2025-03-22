@@ -9,10 +9,16 @@ describe('The languages Component', () => {
     const testId = screen.getByTestId('navigation');
     expect(testId).toBeInTheDocument();
   });
+
   test('Adds a classname for styling', () => {
     render(<Navigation />);
     const container = screen.getByTestId('navigation');
     expect(container.className).toContain(Style.navigationContainer)
+  })
+
+  test('About has been clicked', () => {
+    render(<Navigation />);
+    const clicke
   })
   
 });

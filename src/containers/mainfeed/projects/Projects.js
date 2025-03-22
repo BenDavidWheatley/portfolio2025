@@ -10,7 +10,8 @@
 
         return (
             <section 
-                data-testid="project"
+                data-testid="projects"
+                id="projects"
                 className={Style.projectContainer}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}>
