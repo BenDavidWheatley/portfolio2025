@@ -5,6 +5,7 @@
 
     function Project() {
         // State is used to update the style of the container when mouse hovers in
+        // THIS NEEDS TO BE MOVED TO THE STORE
         const [isHovered, setIsHovered] = useState(false);
 
         return (

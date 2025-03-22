@@ -1,0 +1,55 @@
+/******** EXPERINCE CONTAINER ********/
+
+.experienceContainer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 533ps;
+    padding: 28px 60px 28px 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+.experienceContainer:hover {
+    background-color: #B0C4DE;
+}
+.experienceContainer:hover p,  .experienceContainer:hover h2{
+    color: #101116;
+}
+/******** DATES CONTAINER ********/
+.datesContainer {
+    width: 100%;
+    max-width: 204px;
+    position: relative;
+
+}
+.datesContainer p {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+/******** INFO CONTAINER ********/
+.expInfoContainer {
+    width: 100%;
+    max-width: 533px;
+}
+.expInfoContainer h2 {
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.expInfoContainer h2::after{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    content: '';
+    bottom: 5px;
+    left: 0px;
+    background-color: currentColor;
+}

@@ -27,10 +27,7 @@ describe('The navasideComponent', () => {
   });
 
   test('renders the footer component', () => {
-
-    render(
-        <NavAside />
-    );
+    render(<NavAside />);
     const testId = screen.getByTestId('footer');
     expect(testId).toBeInTheDocument();
 

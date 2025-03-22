@@ -18,14 +18,19 @@ describe('Mainfeed Component', () => {
 
   test('Renders the project tiles', () => {
     render(<Mainfeed />);
-    const testId = screen.getByTestId('project');
-    expect(testId).toBeInTheDocument();
+    const testId = screen.getAllByTestId('project');
+    testId.forEach((el) => {
+      expect(el).toBeInTheDocument();
+    })
+
   });
 
   test('Renders the experience tiles', () => {
     render(<Mainfeed />);
-    const testId = screen.getByTestId('experience');
-    expect(testId).toBeInTheDocument();
+    const testId = screen.getAllByTestId('experience');
+    testId.forEach((el) => {
+      expect(el).toBeInTheDocument();
+    })
   });
 
   test('Applies the class for styling the mainfeed component', () => {

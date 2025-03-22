@@ -1,9 +1,9 @@
 import React from 'react';
-import Styles from './navigation.module.css';
+import Style from './navigation.module.css';
 
 function Navigation() {
     return (
-        <section data-testid="navigation" >
+        <section data-testid="navigation" className={Style.navigationContainer}>
             <ul>
                 <li><a>About</a></li>
                 <li><a>Project</a></li>

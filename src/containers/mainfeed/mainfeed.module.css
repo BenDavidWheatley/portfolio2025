@@ -1,4 +1,6 @@
 .mainFeedContainer {
     width: 100%;
     max-width: 863px;
+    position: absolute;
+    right: 0;
 }
