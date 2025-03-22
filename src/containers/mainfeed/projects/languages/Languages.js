@@ -1,10 +1,10 @@
 import React from 'react';
-import Styles from './languages.module.css';
+import Style from './languages.module.css';
 
-function Languages() {
+function Languages(props) {
     return (
-        <section data-testid="languages" >
-                <p>javascript</p>
+        <section data-testid="languages" className={`${props.isHovered? Style.hovered : Style.NotHovered} ${Style.languageContainer}`} >
+                <p>Javascript</p>
         </section>
     )
 }

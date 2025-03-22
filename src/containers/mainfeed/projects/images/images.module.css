@@ -1,0 +1,6 @@
+.imageContainer{
+    width: 204px;
+    height: 150px;
+    border-radius: 7px;
+    background-color: #E6E6FA /*Remove this once dynamic data is pulling through*/
+}

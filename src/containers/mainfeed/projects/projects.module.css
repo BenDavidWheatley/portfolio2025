@@ -1,0 +1,72 @@
+/******** PROJECT CONTAINER ********/
+
+.projectContainer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 863;
+    height: auto;
+    min-height: 377px;
+    padding: 28px 60px 28px 31px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    transition: all 0.5s ease;
+
+}
+.projectContainer:hover {
+    background-color: #B0C4DE;
+    border-radius: 7px;
+    transition: background-color 0.8s ease, border-radius 1s ease;
+}
+.projectContainer:hover h2, .projectContainer:hover p {
+    color: #101116;
+}
+.projectContainer:hover p{
+    font-weight: 300;
+}
+.projectContainer:hover .languages{
+    background-color: #101116;
+}
+
+/********* IMAGE CONTAINER ********/
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/********* PROJECT INFO *********/
+
+.infoContainer {
+    width: 100%;
+    max-width: 533px;
+    position: relative;
+    justify-self: flex-end;
+}
+.projectH2 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 7px;
+}
+.projectH2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 1px;  /* Adjust thickness as needed */
+    background-color: currentColor; /* Matches text color */
+}
+
+/******* LANGUAGES **********/
+
+.languageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7px;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+}

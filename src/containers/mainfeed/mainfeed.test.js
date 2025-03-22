@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Mainfeed from './Mainfeed';
+import Style from './mainfeed.module.css';
 
 describe('Mainfeed Component', () => {
 
@@ -8,5 +9,29 @@ describe('Mainfeed Component', () => {
     const testId = screen.getByTestId('mainfeed');
     expect(testId).toBeInTheDocument();
   });
+
+  test('renders the about me section', () =>  {
+    render(<Mainfeed />);
+    const testId = screen.getByTestId('about')
+    expect(testId).toBeInTheDocument();
+  });
+
+  test('Renders the project tiles', () => {
+    render(<Mainfeed />);
+    const testId = screen.getByTestId('project');
+    expect(testId).toBeInTheDocument();
+  });
+
+  test('Renders the experience tiles', () => {
+    render(<Mainfeed />);
+    const testId = screen.getByTestId('experience');
+    expect(testId).toBeInTheDocument();
+  });
+
+  test('Applies the class for styling the mainfeed component', () => {
+    render(<Mainfeed />);
+    const container= screen.getByTestId('mainfeed');
+    expect(container.className).toContain(Style.mainFeedContainer);
+  })
 
 });

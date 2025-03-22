@@ -1,10 +1,15 @@
 import React from 'react';
-import Styles from './navAside.module.css';
+import Style from './navAside.module.css';
+import Header from './header/Header';
+import Navigation from './navigation/Navigation';
+import Footer from './footer/Footer'
 
 function NavAside() {
     return (
-        <section data-testid="navaside" >
-                <p>This will be the nav aside</p>
+        <section data-testid="navaside" className={Style.navAsideContainer} >
+            <Header />
+            <Navigation />
+            <Footer />
         </section>
     )
 }

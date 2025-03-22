@@ -1,10 +1,10 @@
 import React from 'react';
-import Styles from './projects.module.css';
+import Style from './images.module.css';
 
 function Images() {
     return (
-        <section data-testid="images" >
-                <p>This will be an image</p>
+        <section data-testid="images" className={Style.imageContainer} >
+            <p>This will be an image</p>
         </section>
     )
 }

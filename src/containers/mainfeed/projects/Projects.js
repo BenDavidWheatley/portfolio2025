@@ -1,11 +1,36 @@
-import React from 'react';
-import Styles from './projects.module.css';
+    import React, { useState } from 'react';
+    import Style from './projects.module.css';
+    import Images from './images/Images';
+    import Languages from './languages/Languages';
 
-function Project() {
-    return (
-        <section data-testid="project" >
-                <p>this is a project container</p>
-        </section>
-    )
-}
-export default Project;
+    function Project() {
+        // State is used to update the style of the container when mouse hovers in
+        const [isHovered, setIsHovered] = useState(false);
+
+        return (
+            <section 
+                data-testid="project"
+                className={Style.projectContainer}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}>
+                    {/* Image container */}
+                    <div className={Style.imageContainer}>
+                        <Images />
+                        <Images />
+                    </div>
+                
+                    {/* Information container */}
+                    <div className={Style.infoContainer}>
+                        <h2 className={Style.projectH2}>PROJECT TITLE</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel diam orci. In finibus nisi in nisl convallis sagittis. Phasellus dictum non libero vitae tincidunt. Integer non nisi tincidunt, scelerisque urna et, finibus orci. Curabitur dignissim orci at ex placerat, vitae placerat odio maximus. In augue mi, mollis at malesuada vitae, porta vitae felis. Etiam nunc eros, blandit id tempor at, auctor vel orci. Curabitur posuere bibendum enim </p>
+                        <div className={Style.languageContainer}>
+                            <Languages ClassName={Style.languages} isHovered={isHovered} />
+                            <Languages ClassName={Style.languages} isHovered={isHovered} />
+                            <Languages ClassName={Style.languages} isHovered={isHovered} />
+                        </div>       
+                    </div>
+                
+            </section>
+        )
+    }
+    export default Project;

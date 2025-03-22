@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+
+.languageContainer {
+    height: 30px;
+    width: 126px;
+    border-radius: 100px;
+}
+.languageContainer p {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.hovered  {
+    background-color: #101116;
+    transition: all 0.8s ease;
+}
+.NotHovered {
+    background-color: #FFD700;
+    transition: all 0.2s ease;
+}
+.NotHovered p{
+    color: black;
+}
+.hovered p {
+    color: #E6E6FA !important;
+    
+}

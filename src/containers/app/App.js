@@ -1,10 +1,14 @@
 
 import './App.css';
+import NavAside from '../navAside/Navaside';
+import Mainfeed from '../mainfeed/Mainfeed';
+import Style from './app.module.css';
 
 function App() {
   return (
-    <div className="App" data-testid="app" >
-      <p>I am the main app</p>
+    <div className={Style.mainAppContainer} data-testid="app" >
+      <NavAside />
+      <Mainfeed />
     </div>
   );
 }
