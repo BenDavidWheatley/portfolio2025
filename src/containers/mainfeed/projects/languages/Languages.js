@@ -3,7 +3,7 @@ import Style from './languages.module.css';
 
 function Languages(props) {
     return (
-        <section data-testid="languages" className={`${props.isHovered? Style.hovered : Style.NotHovered} ${Style.languageContainer}`} >
+        <section data-testid="languages" className={Style.languageContainer} >
                 <p>Javascript</p>
         </section>
     )

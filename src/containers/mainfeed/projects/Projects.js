@@ -4,17 +4,12 @@
     import Languages from './languages/Languages';
 
     function Project() {
-        // State is used to update the style of the container when mouse hovers in
-        // THIS NEEDS TO BE MOVED TO THE STORE
-        const [isHovered, setIsHovered] = useState(false);
-
+      
         return (
             <section 
                 data-testid="projects"
                 id="projects"
-                className={Style.projectContainer}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}>
+                className={Style.projectContainer}>
                     {/* Image container */}
                     <div className={Style.imageContainer}>
                         <Images />
@@ -26,9 +21,9 @@
                         <h2 className={Style.projectH2}>PROJECT TITLE</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel diam orci. In finibus nisi in nisl convallis sagittis. Phasellus dictum non libero vitae tincidunt. Integer non nisi tincidunt, scelerisque urna et, finibus orci. Curabitur dignissim orci at ex placerat, vitae placerat odio maximus. In augue mi, mollis at malesuada vitae, porta vitae felis. Etiam nunc eros, blandit id tempor at, auctor vel orci. Curabitur posuere bibendum enim </p>
                         <div className={Style.languageContainer}>
-                            <Languages ClassName={Style.languages} isHovered={isHovered} />
-                            <Languages ClassName={Style.languages} isHovered={isHovered} />
-                            <Languages ClassName={Style.languages} isHovered={isHovered} />
+                            <Languages ClassName={Style.languages} />
+                            <Languages ClassName={Style.languages} />
+                            <Languages ClassName={Style.languages} />
                         </div>       
                     </div>
                 

@@ -1,22 +1,44 @@
 /******** EXPERINCE CONTAINER ********/
 
 .experienceContainer {
-    box-sizing: border-box;
+  box-sizing: border-box;
     width: 100%;
-    max-width: 533ps;
+    max-width: 863px;
+    height: auto;
     padding: 28px 60px 28px 31px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: all 0.5s ease;
+    position: relative;
+    margin-top: 10px;
+}
+.experienceContainer:after{
+    position: absolute;
+    content: '';
+    height: 0px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
     border-radius: 7px;
-    margin-bottom: 18px;
+    transition: all 0.5s;
+    z-index: -1;
 }
-.experienceContainer:hover {
-    background-color: #B0C4DE;
+.experienceContainer:hover:after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: #B0C4DE1a;
+    border-right: #B0C4DE solid 1px;
+    border-bottom: #B0C4DE solid 1px;
+    transition: all 0.5s;    z-index: -1;
 }
-.experienceContainer:hover p,  .experienceContainer:hover h2{
-    color: #101116;
-}
+
+
 /******** DATES CONTAINER ********/
 .datesContainer {
     width: 100%;

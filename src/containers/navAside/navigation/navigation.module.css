@@ -1,6 +1,6 @@
-.navAsideContainer{
-    width: 100%;
-    max-width:  534px;
+.navigationContainer{
+    margin-top: 126px;
+    width: 533px;
 }
 .navigationContainer ul{
     list-style-type: none;
