@@ -2,24 +2,31 @@
 
 .enterSite{
     position: absolute;
-    width: 124px;
+    width: 80px;
     top: 50vh;
-    left: calc(50vw - 92px);
+    left: calc(50vw - 40px);
     font-family: "Work Sans", sans-serif;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 18px;
     margin-top: 10px;
-    cursor: pointer; 
-    
+    cursor: pointer;   
     animation: colorChange 1.5s ease-in;
 }
+@media only screen and (max-width: 878px){
+    .enterSite{
+        font-size: 18px;
+        width: 80px;
+        left: calc(50vw - 40px);
+    }
 
+}
 .noDisplay {
   display: none;
-
 }
 .mainHeaderThree{
     position: absolute;
+    color: #101116;
+    animation: colorChange 1s ease-in-out 3s forwards;
 }
 .headerDiv{
     height: 95px;
@@ -30,14 +37,15 @@
     position: absolute;
     width: 348px;
     top: calc(50vh - 100px);
-    left: calc(50vw - 30px - (348px / 2));
+    left: calc(50vw - (348px / 2));
     animation: colorChange 1s ease-in;
 }
+
 .subheader{
     position: absolute;
     width: 244px;
     top: calc(50vh - 50px);
-    left: calc(50vw - 30px - 122px);
+    left: calc(50vw - 122px);
     animation: colorChange 1.2s ease-in;
 }
 .subheaderAnimation {
@@ -46,6 +54,8 @@
 .mainHeaderAnimation {
     animation: mainHeader 3.2s ease-in-out;
 }
+
+/********* Header Animations for desktop *********/
 @keyframes colorChange {
     0%{
         color: #101116;
@@ -62,25 +72,25 @@
         position: absolute;
         width: 348px;
         top: calc(50vh - 100px);
-        left: calc(50vw - 30px - (348px / 2));
+        left: calc(50vw - (348px / 2));
     }
     10%{
         position: absolute;
         width: 348px;
         top: calc(50vh - 100px);
-        left: calc(50vw - 30px - (348px / 2));
+        left: calc(50vw - (348px / 2));
     }
     60%{
         position: absolute;
         width: 348px;
-        top: 0;
-        left: 0;
+        top: 30px;
+        left: 30px;
     }
     100% {
         position: absolute;
         width: 348px;
-        top: 0;
-        left: 0;
+        top: 30px;
+        left: 30px;
     }
 }
 
@@ -89,25 +99,116 @@
         position: absolute;
         width: 244px;
         top: calc(50vh - 50px);
-        left: calc(50vw - 30px - 122px);
+        left: calc(50vw - 122px);
     }
     30%{
         position: absolute;
         width: 244px;
         top: calc(50vh - 50px);
-        left: calc(50vw - 30px - 122px);
+        left: calc(50vw - 122px);
     }
     80%{
         position: absolute;
         width: 244px;
-        top: 58px;
-        left: 0px;
+        top: 88px;
+        left: 30px;
     }
     100%{
         position: absolute;
         width: 244px;
-        top: 58px;
-        left: 0px;
+        top: 88px;
+        left: 30px;
+    }
+}
+
+/********* Header Animations for mobile *********/
+
+@media only screen and (max-width: 878px){
+    .mainHeader {
+        font-size: 28px;
+        width: 204px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (204px / 2));
+    }
+    .subheader {
+        font-size: 18px;
+        width: 146px;
+        margin-top: 0;
+        top: calc(50vh - 65px);
+        left: calc(50vw - 73px);
+    }
+    .mainHeaderThree{
+            font-size: 16px;
+            top: 94px;
+        }
+    
+    .mainHeaderAnimation{
+        animation: mainHeaderMobile 3.2s ease-in-out forwards;
+    }
+    .subheaderAnimation {
+        animation: headerTwoMobile 3.2s ease-in-out forwards;
+    }
+}
+
+
+@keyframes mainHeaderMobile {
+    0%{
+        font-size: 28px;
+        position: absolute;
+        width: 348px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (204px / 2));
+    }
+    10%{
+        font-size: 28px;
+        position: absolute;
+        width: 348px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (204px / 2));
+    }
+    60%{
+        font-size: 28px;
+        position: absolute;
+        width: 348px;
+        top: 30px;
+        left: 30px;
+    }
+    100% {
+        font-size: 28px;
+        position: absolute;
+        width: 348px;
+        top: 30px;
+        left: 30px;
+    }
+}
+@keyframes headerTwoMobile {
+    0%{
+        position: absolute;
+        width: 244px;
+        top: calc(50vh - 65px);
+        left: calc(50vw - 73px);
+        font-size: 18px;
+    }
+    30%{
+        position: absolute;
+        width: 244px;
+        top: calc(50vh - 65px);
+        left: calc(50vw - 73px);
+        font-size: 18px;
+    }
+    80%{
+        position: absolute;
+        width: 244px;
+        top: 68px;
+        left: 30px;
+        font-size: 18px;
+    }
+    100%{
+        position: absolute;
+        width: 244px;
+        top: 68px;
+        left: 30px;
+        font-size: 18px;
     }
 }
 /* Background with animation */

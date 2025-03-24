@@ -21,7 +21,7 @@ function Header() {
                 
                 <h3 className={isEntered ? Style.mainHeaderThree : Style.noDisplay}>Oxford Based</h3>
                 <p 
-                    className={isEntered ? Style.noDisplay : Style.enterSite} 
+                    className={`${'clickable'} ${isEntered ? Style.noDisplay : Style.enterSite}`} 
                     onClick={handleEnterClick}
                 >
                     &lt;Enter /&gt;

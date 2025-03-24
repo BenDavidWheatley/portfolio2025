@@ -48,10 +48,11 @@ function Navigation() {
     return (
         <section data-testid="navigation" className={Style.navigationContainer}>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li className='clickable'><a href="#about">About</a></li>
+                <li className='clickable'><a href="#projects">Projects</a></li>
+                <li className='clickable'><a href="#experience">Experience</a></li>
             </ul>
+
         </section>
     );
 }
