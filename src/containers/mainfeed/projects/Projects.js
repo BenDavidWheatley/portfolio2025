@@ -1,4 +1,4 @@
-    import React, { useState } from 'react';
+    import React from 'react';
     import Style from './projects.module.css';
     import Images from './images/Images';
     import Languages from './languages/Languages';
