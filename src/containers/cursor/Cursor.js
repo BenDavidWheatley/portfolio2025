@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setPosition, setHovering } from './cursorSlice';
 import Style from './cursor.module.css';
 
 function Cursor() {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
-    const [isHovering, setIsHovering] = useState(false);
+    const dispatch = useDispatch();
+    const { position, isHovering } = useSelector((state) => state.cursor);
 
     useEffect(() => {
         const moveCursor = (e) => {
-            setPosition({ x: e.clientX, y: e.clientY });
-            
+            dispatch(setPosition({ x: e.clientX, y: e.clientY }));
 
-            // Improved clickable detection
             const target = e.target.closest('.clickable, button, a');
 
-
             if (target) {
-                console.log('Hovering over clickable element');
-                setIsHovering(true);
+                dispatch(setHovering(true));
             } else {
-                console.log('Not hovering over clickable element');
-                setIsHovering(false);
+                dispatch(setHovering(false));
             }
         };
 
@@ -28,7 +25,7 @@ function Cursor() {
         return () => {
             window.removeEventListener('mousemove', moveCursor);
         };
-    }, []);
+    }, [dispatch]);
 
     return (
         <div

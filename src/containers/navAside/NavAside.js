@@ -9,7 +9,7 @@ function NavAside() {
         <section data-testid="navaside" className={Style.navAsideContainer} >
             <Header />
             <Navigation />
-         {/*   <Footer className={Style.footerContainer}/>*/}
+             <Footer className={Style.footerContainer}/>
         </section>
     )
 }

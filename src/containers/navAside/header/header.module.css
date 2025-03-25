@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 .enterSite{
     position: absolute;
-    width: 80px;
+    width: 180px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
     top: 50vh;
-    left: calc(50vw - 40px);
-    font-family: "Work Sans", sans-serif;
+    left: calc(50vw - 90px);
+    font-family: "Cormorant Garamond", serif;
+    text-transform: uppercase;
     font-weight: 300;
     font-size: 18px;
     margin-top: 10px;
     cursor: pointer;   
-    animation: colorChange 1.5s ease-in;
+    animation: displayOn 5s ease-in forwards;
+    transition: all 0.5s ease ;
+}
+.enterSite:hover{
+    background-color: #FFD700;
+    transition: all 0.5s ease;
 }
 @media only screen and (max-width: 878px){
     .enterSite{
@@ -26,7 +36,7 @@
 .mainHeaderThree{
     position: absolute;
     color: #101116;
-    animation: colorChange 1s ease-in-out 3s forwards;
+    animation: colorChange 2s ease-in-out 3s forwards;
 }
 .headerDiv{
     height: 95px;
@@ -38,7 +48,7 @@
     width: 348px;
     top: calc(50vh - 100px);
     left: calc(50vw - (348px / 2));
-    animation: colorChange 1s ease-in;
+    animation: colorChange 2s ease-in;
 }
 
 .subheader{
@@ -46,7 +56,8 @@
     width: 244px;
     top: calc(50vh - 50px);
     left: calc(50vw - 122px);
-    animation: colorChange 1.2s ease-in;
+    color: #101116;
+    animation: colorChange 2s ease-in 1s forwards;
 }
 .subheaderAnimation {
     animation: headerTwo 3.2s ease-in-out;
@@ -56,11 +67,26 @@
 }
 
 /********* Header Animations for desktop *********/
+@keyframes displayOn {
+    0%{
+        background-color: #101116;
+        color: #101116;
+    }
+    40%{
+            background-color: #101116;
+            color: #101116;
+        
+    }
+    100%{
+        background-color: white;
+        color: black;
+    }
+}
 @keyframes colorChange {
     0%{
         color: #101116;
     }
-    40%{
+    10%{
         color: #101116;
     }
     100%{
@@ -74,7 +100,7 @@
         top: calc(50vh - 100px);
         left: calc(50vw - (348px / 2));
     }
-    10%{
+    20%{
         position: absolute;
         width: 348px;
         top: calc(50vh - 100px);

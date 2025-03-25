@@ -6,6 +6,7 @@ import Cursor from '../cursor/Cursor';
 import Style from './app.module.css';
 
 
+
 function App() {
   return (
     <div className={Style.mainAppContainer} data-testid="app" >
