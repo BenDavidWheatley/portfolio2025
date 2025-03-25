@@ -1,6 +1,13 @@
 .languageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 24px;
-    width: 126px;
+    width: 100%;
+    max-width: 126px;
+    min-width: 100px;
     border-radius: 100px;
     display: flex;
     background-color: #FFD700;

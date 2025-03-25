@@ -2,7 +2,12 @@
     width: 204px;
     height: 150px;
     border-radius: 7px;
-    background-color: #E6E6FA /*Remove this once dynamic data is pulling through*/
+}
+.imageContainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+
 }
 
 @media only screen and (max-width: 488px){

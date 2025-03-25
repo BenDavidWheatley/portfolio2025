@@ -66,6 +66,7 @@
     width: 100%;
     position: relative;
     text-transform: uppercase;
+    font-size: 20px;
     margin-bottom: 7px;
 }
 .expInfoContainer h2::after{
@@ -73,7 +74,7 @@
     width: 100%;
     height: 1px;
     content: '';
-    bottom: 5px;
+    bottom: 3px;
     left: 0px;
     background-color: currentColor;
 }
@@ -90,7 +91,7 @@
 @media only screen and (max-width: 780px){
     .experienceContainer{
        flex-direction: column;
-       min-height: 260px;
+       /*min-height: 260px;*/
        height: auto;
        padding-top: 30px;
        justify-content: flex-start;

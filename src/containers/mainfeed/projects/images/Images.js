@@ -1,10 +1,12 @@
 import React from 'react';
 import Style from './images.module.css';
 
-function Images() {
+function Images(props) {
+    const { image } = props;
+    const { altTag } = props;
     return (
         <section data-testid="images" className={Style.imageContainer} >
-            <p>This will be an image</p>
+            <img src={image} alt={altTag} className={Style.image} />
         </section>
     )
 }
