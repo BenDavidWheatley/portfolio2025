@@ -7,8 +7,8 @@
     height: 30px;
     border-radius: 50px;
     border: none;
-    top: 50vh;
-    left: calc(50vw - 90px);
+    top: 50vh; /* Change to 50vh instead of 50dvh */
+    left: calc(50vw - 90px); /* Change to 50vw */
     font-family: "Cormorant Garamond", serif;
     text-transform: uppercase;
     font-weight: 300;
@@ -16,28 +16,24 @@
     margin-top: 10px;
     cursor: pointer;   
     animation: displayOn 5s ease-in forwards;
-    transition: all 0.5s ease ;
+    transition: all 0.5s ease;
 }
+
 .enterSite:hover{
     background-color: #FFD700;
     transition: all 0.5s ease;
 }
-@media only screen and (max-width: 878px){
-    .enterSite{
-        font-size: 18px;
-        width: 120px;
-        left: calc(50vw - 60px);
-    }
 
-}
 .noDisplay {
-  display: none;
+    display: none;
 }
+
 .mainHeaderThree{
     position: absolute;
     color: #101116;
     animation: colorChange 2s ease-in-out 3s forwards;
 }
+
 .headerDiv{
     height: 95px;
 }
@@ -59,9 +55,11 @@
     color: #101116;
     animation: colorChange 2s ease-in 1s forwards;
 }
+
 .subheaderAnimation {
     animation: headerTwo 3.2s ease-in-out;
 }
+
 .mainHeaderAnimation {
     animation: mainHeader 3.2s ease-in-out;
 }
@@ -73,15 +71,15 @@
         color: #101116;
     }
     40%{
-            background-color: #101116;
-            color: #101116;
-        
+        background-color: #101116;
+        color: #101116;
     }
     100%{
         background-color: white;
         color: black;
     }
 }
+
 @keyframes colorChange {
     0%{
         color: #101116;
@@ -93,6 +91,7 @@
         color: #E6E6FA;
     }
 }
+
 @keyframes mainHeader {
     0%{
         position: absolute;
@@ -148,103 +147,106 @@
 }
 
 /********* Header Animations for mobile *********/
-
-@media only screen and (max-width: 878px){
+@media only screen and (max-width: 480px){ /* Adjusted breakpoint to target smaller screens */
     .mainHeader {
-        font-size: 28px;
-        width: 204px;
-        top: calc(50vh - 100px);
-        left: calc(50vw - (204px / 2));
+        font-size: 24px; /* Adjust font size */
+        width: 240px; /* Adjust width */
+        top: calc(50vh - 80px); /* Adjust top position */
+        left: calc(50vw - 120px); /* Adjust left position */
     }
+
     .subheader {
-        font-size: 18px;
-        width: 146px;
-        margin-top: 0;
-        top: calc(50vh - 65px);
-        left: calc(50vw - 73px);
+        font-size: 16px; /* Adjust font size */
+        width: 180px; /* Adjust width */
+        top: calc(50vh - 40px); /* Adjust top position */
+        left: calc(50vw - 90px); /* Adjust left position */
     }
-    .mainHeaderThree{
-            font-size: 16px;
-            top: 94px;
-        }
-    
+
+    .mainHeaderThree {
+        font-size: 14px;
+        top: 94px;
+    }
+
     .mainHeaderAnimation{
         animation: mainHeaderMobile 3.2s ease-in-out forwards;
     }
+
     .subheaderAnimation {
         animation: headerTwoMobile 3.2s ease-in-out forwards;
     }
 }
 
-
 @keyframes mainHeaderMobile {
     0%{
-        font-size: 28px;
+        font-size: 24px;
         position: absolute;
-        width: 348px;
-        top: calc(50vh - 100px);
-        left: calc(50vw - (204px / 2));
+        width: 240px;
+        top: calc(50vh - 80px);
+        left: calc(50vw - (240px / 2));
     }
     10%{
-        font-size: 28px;
+        font-size: 24px;
         position: absolute;
-        width: 348px;
-        top: calc(50vh - 100px);
-        left: calc(50vw - (204px / 2));
+        width: 240px;
+        top: calc(50vh - 80px);
+        left: calc(50vw - (240px / 2));
     }
     60%{
-        font-size: 28px;
+        font-size: 24px;
         position: absolute;
-        width: 348px;
+        width: 240px;
         top: 30px;
         left: 30px;
     }
     100% {
-        font-size: 28px;
+        font-size: 24px;
         position: absolute;
-        width: 348px;
+        width: 240px;
         top: 30px;
         left: 30px;
     }
 }
+
 @keyframes headerTwoMobile {
     0%{
         position: absolute;
-        width: 244px;
-        top: calc(50vh - 65px);
-        left: calc(50vw - 73px);
-        font-size: 18px;
+        width: 180px;
+        top: calc(50vh - 40px);
+        left: calc(50vw - 90px);
+        font-size: 16px;
     }
     30%{
         position: absolute;
-        width: 244px;
-        top: calc(50vh - 65px);
-        left: calc(50vw - 73px);
-        font-size: 18px;
+        width: 180px;
+        top: calc(50vh - 40px);
+        left: calc(50vw - 90px);
+        font-size: 16px;
     }
     80%{
         position: absolute;
-        width: 244px;
+        width: 180px;
         top: 68px;
         left: 30px;
-        font-size: 18px;
+        font-size: 16px;
     }
     100%{
         position: absolute;
-        width: 244px;
+        width: 180px;
         top: 68px;
         left: 30px;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
+
 /* Background with animation */
 .background{
     background-color: #101116;
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /* Change to 100vh */
+    width: 100vw; /* Change to 100vw */
     transform: translateX(-30px) translatey(-30px);
     opacity: 1;
 }
+
 .backgroundFade {
     animation: backgroundFade 3s linear;
 }
@@ -252,29 +254,23 @@
 @keyframes backgroundFade {
     0% {
         background-color: #101116;
-        height: 100vh;
-        width: 100vw;
+        height: 100vh; /* Change to 100vh */
+        width: 100vw; /* Change to 100vw */
         transform: translateX(-30px) translatey(-30px);
         opacity: 1;
     }
     90% {
         background-color: #101116;
-        height: 100vh;
-        width: 100vw;
+        height: 100vh; /* Change to 100vh */
+        width: 100vw; /* Change to 100vw */
         transform: translateX(-30px) translatey(-30px);
         opacity: 1;
-        }
+    }
     100% {
         opacity: 0;
         background-color: #101116;
-        height: 100vh;
-        width: 100vw;
+        height: 100vh; /* Change to 100vh */
+        width: 100vw; /* Change to 100vw */
         transform: translateX(-30px) translatey(-30px);
-     
     }
 }
-
-
-
-
-
