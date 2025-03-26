@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPosition, setHovering } from './cursorSlice';
 import Style from './cursor.module.css';
@@ -6,6 +6,7 @@ import Style from './cursor.module.css';
 function Cursor() {
     const dispatch = useDispatch();
     const { position, isHovering } = useSelector((state) => state.cursor);
+    const trailRef = useRef([]);
 
     useEffect(() => {
         const isDesktop = window.innerWidth > 768;
@@ -17,6 +18,21 @@ function Cursor() {
 
             const target = e.target.closest('.clickable, button, a');
             dispatch(setHovering(!!target));
+
+            createTrail(e.clientX, e.clientY);
+        };
+
+        const createTrail = (x, y) => {
+            const trailElement = document.createElement('div');
+            trailElement.className = Style.trailBlaze;
+            trailElement.style.left = `${x}px`;
+            trailElement.style.top = `${y}px`;
+
+            document.body.appendChild(trailElement);
+
+            setTimeout(() => {
+                trailElement.remove();
+            }, 500); // Duration for the trail to fade out
         };
 
         window.addEventListener('mousemove', moveCursor);

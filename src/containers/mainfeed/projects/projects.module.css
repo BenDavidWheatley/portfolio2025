@@ -9,8 +9,7 @@
         min-height: 377px;
         padding: 28px 60px 28px 31px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         gap: 20px;
         transition: all 0.5s ease;
         position: relative;
@@ -18,7 +17,7 @@
     }
     @media only screen and (max-width: 1040px){
         .projectContainer{
-            max-width: 90%;
+            max-width: 96%;
             margin: 10px auto;
         }
     }
@@ -51,31 +50,18 @@
     .projectContainer:hover p{
         font-weight: 300;
     }
-
-    /********* IMAGE CONTAINER ********/
-
-    .imageContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 20px;
-        padding-top: 5px;
+    .projectContainer:hover .projectH2{
+        font-weight: 500;
+        color: #40E0D0bf;
     }
+
     /********* PROJECT INFO *********/
 
-    .infoContainer {
-        width: 100%;
-        max-width: 533px;
-        position: relative;
-        justify-self: flex-end;
-        margin-bottom: 30px;
-        padding-bottom: 30px;
-    }
     .projectH2 {
         position: relative;
         width: 100%;
         margin-bottom: 7px;
-        font-size: 21px;
+        font-size: 28px;
         text-transform: uppercase;
     }
     .projectH2::after {
@@ -91,11 +77,27 @@
         font-family: 'work sans';
         font-size: 14px;
         font-weight: 300;
-      
-        text-decoration: none;
+        text-decoration: none;     
+        position: relative;
+        margin-right: 10%;
+    }
+    .projectLink:after{
         position: absolute;
-        bottom: 60px;
-        right: 0;
+        content: '';
+        width: 0px;
+        height: 1px;
+        background-color: white;
+        left: 0px;
+        bottom: 0;
+        transition: all 0.3s ease;
+    }
+    .projectLink:hover:after{
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        left: 0;
+        bottom: 0;
+        transition: all 0.3s ease;
     }
 
     /******* LANGUAGES **********/
@@ -107,9 +109,8 @@
         flex-wrap: wrap;
         gap: 7px;
         width: 100%;
-        max-width: 533px;
-        position: absolute;
-        bottom: -30px;
+        margin-top: 10px;
+
 
     }
     @media only screen and (max-width: 1180px){
@@ -120,10 +121,7 @@
 
     @media only screen and (max-width: 880px){
         .projectContainer {
-            flex-direction: column-reverse;
-            padding: 20px 30px;
-        max-width: 100%;
-            margin: 20px 0px;
+            padding: 40px 30px 68px 30px;
         
         }
         .infoContainer{
@@ -141,7 +139,7 @@
         bottom: -40px;
         flex-wrap: wrap;
         margin: auto;
-        justify-content: center;
+        justify-content:  flex-start;
         }
     }
     @media only screen and (max-width: 488px){

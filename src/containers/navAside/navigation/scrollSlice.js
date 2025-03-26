@@ -2,7 +2,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    targetId: null, // Store the target section ID
+    targetId: null,         // Store the target section ID for smooth scrolling
+    activeSection: null     // Track the active section for navigation highlight
 };
 
 const scrollSlice = createSlice({
@@ -14,20 +15,30 @@ const scrollSlice = createSlice({
         },
         clearTargetId: (state) => {
             state.targetId = null;
+        },
+        highlightNav: (state, action) => {
+            state.activeSection = action.payload; // Track the active section
         }
     }
 });
 
 // Export actions
-export const { setTargetId, clearTargetId } = scrollSlice.actions;
+export const { setTargetId, clearTargetId, highlightNav } = scrollSlice.actions;
 
 // Thunk to handle smooth scrolling
-export const smoothScroll = (targetId) => () => {
+export const smoothScroll = (targetId) => (dispatch) => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
+        dispatch(highlightNav(targetId + 'Container')); // Highlight the section immediately
+        dispatch(setTargetId(targetId)); // Store targetId in Redux for reference
+
         const startPosition = window.scrollY;
-        const targetPosition = targetElement.offsetTop;
+
+        // Add offset for the "About" section
+        const offset = targetId === 'about' ? 200 : 0;
+        const targetPosition = targetElement.offsetTop - offset;
+
         const distance = targetPosition - startPosition;
         const duration = 2500;
         let startTime = null;
@@ -52,6 +63,7 @@ export const smoothScroll = (targetId) => () => {
         requestAnimationFrame(animation);
     }
 };
+
 
 // Export reducer
 export default scrollSlice.reducer;

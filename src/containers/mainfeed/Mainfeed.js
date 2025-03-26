@@ -1,49 +1,74 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Style from './mainfeed.module.css';
 import About from './about/About';
 import Projects from './projects/Projects';
-import Experience from './experience/Experience'
+import Experience from './experience/Experience';
 import Footer from './footer/Footer';
-
+import { useDispatch } from 'react-redux';
+import { highlightNav } from '../navAside/navigation/scrollSlice'; // New action to highlight nav item
 
 function Mainfeed(props) {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '-50% 0px -50% 0px',
+            threshold: 0,
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    dispatch(highlightNav(entry.target.id));
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        const sections = [
+            document.getElementById('aboutContainer'),
+            document.getElementById('projectContainer'),
+            document.getElementById('experienceContainer')
+        ];
+
+        sections.forEach(section => observer.observe(section));
+
+        return () => sections.forEach(section => observer.unobserve(section));
+    }, [dispatch]);
+
     const experience = props.experience;
     const projectData = props.projectData;
-    console.log(experience);
    
     return (
         <section data-testid="mainfeed" className={Style.mainFeedContainer} >
-            <About />
-            <div className={Style.spacer}></div> {/*This div is there to create a spacer */}
-            {projectData.map((project, index) => {
-                return (
+            <section id='aboutContainer'>
+                <About id="about" />
+            </section>
+            <div className={Style.spacer}></div>
+            <section id='projectContainer'>
+                {projectData.map((project, index) => (
                     <Projects 
+                        id="projects"
                         key={index}
-                        title={project.title}
-                        description={project.description}
-                        images={project.images}
-                        languages={project.languages}
-                        link={project.link}
+                        {...project}
                     />
-                )
-            }
-            )}
-            <div className={Style.spacer}></div> {/*This div is there to create a spacer */}
-            {experience.map((exp, index) => {
-                return (
+                ))}
+            </section>
+            <div className={Style.spacer}></div>
+            <section id='experienceContainer'>
+                {experience.map((exp, index) => (
                     <Experience 
+                        id="experience" 
                         key={index}
-                        title={exp.title}
-                        company={exp.company}
-                        years={exp.years}
-                        description={exp.description}
+                        {...exp}
                     />
-                )
-            }
-            )}
-            <Footer  />
-            
+                ))}
+            </section>
+            <Footer />
         </section>
-    )
+    );
 }
+
 export default Mainfeed;

@@ -6,11 +6,11 @@
     flex-wrap: wrap;
     height: 24px;
     width: 100%;
-    max-width: 126px;
+    max-width: 120px;
     min-width: 100px;
-    border-radius: 100px;
+    border-radius: 7px;
     display: flex;
-    background-color: #FFD7001a;
+    background-color: #40E0D01a;
 }
 .languageContainer p {
     font-weight: 500;
@@ -19,6 +19,6 @@
     align-self: center;
     text-align: center;
     margin: auto;
-    color: #FFD700bf;
+    color: #40E0D0bf;
 }
 

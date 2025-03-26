@@ -1,12 +1,15 @@
-.navigationContainer{
+.navigationContainer {
     margin-top: 126px;
     width: 533px;
-    opacity: 0;
+    opacity: 0;       
+    transform: translateY(-20px); 
     animation: showNav 2s ease 3s forwards;
 }
+
 .noDisplay {
-    display: none;
+    display: none !important; 
 }
+
 @keyframes showNav {
     0% {
         opacity: 0;
@@ -14,17 +17,17 @@
     }
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0);
     }
-    
 }
 
-.navigationContainer ul{
+.navigationContainer ul {
     list-style-type: none;
     margin-top: 50px;
     padding: 0px;
 }
-.navigationContainer li{
+
+.navigationContainer li {
     width: 126px;
     color: #E6E6FA;
     font-family: "Cormorant Garamond";
@@ -34,8 +37,10 @@
     line-height: normal;
     margin-bottom: 7px;
     position: relative;
+    transition: all 0.5s ease-in-out;
 }
-.navigationContainer li:after{
+
+.navigationContainer li:after {
     content: '';
     width: 126px;
     height: 1px;
@@ -45,58 +50,118 @@
     left: 0;
     transition: width 0.5s ease;
 }
-.navigationContainer li:hover:after{
+
+.navigationContainer li:hover:after {
     width: 300px;
     transition: width 0.5s ease-in-out;
 }
+
 .navigationContainer li a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1040px){
-    .navigationContainer{
+.navigationContainer li.active {
+    color: #40E0D0; 
+    font-size: 22px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigationContainer li.active:after {
+    width: 300px;
+    transition: width 0.5s ease-in-out;
+}
+
+.navigationContainer li.inactive {
+    opacity: 0.4; 
+}
+.navigationContainer li.inactive:hover {
+    opacity: 0.8;
+}
+
+/* Media Query Fixes */
+@media only screen and (max-width: 1040px) {
+    .navigationContainer {
         position: absolute;
-        right: 30px;
+        right: 80px;
         top: 0px;
         width: 200px;
         height: auto;
         margin-top: 30px;
+        opacity: 0;  /* Hidden by default */
+        animation: showNav 2s ease 3s forwards;
     }
-    .navigationContainer ul{
+
+    .navigationContainer ul {
         margin-top: 0px;
     }
 }
-@media only screen and (max-width: 660px){
-    .navigationContainer{
-        width: 160px;
-        right: 0px;
+
+@media only screen and (max-width: 880px) {
+    .navigationContainer {
+    right: 100px;
     }
-  
+    .navigationContainer li {
+        font-size: 16px;
+    }
+    .navigationContainer li.active {
+    font-size: 18px;
+
+
 }
-@media only screen and (max-width: 480px){
-        .navigationContainer{
-            width: 100%;
-            padding: 0px 30px;
-            top: 110px;
-        }
-        .navigationContainer ul{
-           width: 100%;
-           display: flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           gap: 4px;
-           justify-content: space-between;
-        }
-        .navigationContainer li {
-            width: auto;
-        }
-        .navigationContainer li:after{
-            width: 100%;
-          
-        }
-        .navigationContainer li:hover:after{
-            width: 120px;
-          
-        }
-      
+}
+
+@media only screen and (max-width: 660px) {
+    .navigationContainer {
+        width: 160px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navigationContainer {
+        width: 95%;
+        padding: 0px 30px;
+        top: 110px;
+        gap: 20px;
+        opacity: 0;  /* Hidden by default */
+        animation: showNav 2s ease 3s forwards;
+    }
+
+    .navigationContainer ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+        justify-content: space-between;
+    }
+
+    .navigationContainer li {
+        width: auto;
+    }
+
+    .navigationContainer li:after {
+        width: 100%;
+    }
+
+    .navigationContainer li:hover:after {
+       width: 0px;
+    }
+    .navigationContainer li.active {
+    color: #40E0D0; 
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigationContainer li.active:after {
+    width: 130%;
+    transition: width 0.5s ease-in-out;
+}
+
+.navigationContainer li.inactive {
+    opacity: 0.5; 
+}
+.navigationContainer li.inactive:hover {
+    opacity: 0.8;
+}
 }
