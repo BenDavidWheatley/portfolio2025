@@ -8,16 +8,15 @@ function Cursor() {
     const { position, isHovering } = useSelector((state) => state.cursor);
 
     useEffect(() => {
+        const isDesktop = window.innerWidth > 768;
+
+        if (!isDesktop) return;
+
         const moveCursor = (e) => {
             dispatch(setPosition({ x: e.clientX, y: e.clientY }));
 
             const target = e.target.closest('.clickable, button, a');
-
-            if (target) {
-                dispatch(setHovering(true));
-            } else {
-                dispatch(setHovering(false));
-            }
+            dispatch(setHovering(!!target));
         };
 
         window.addEventListener('mousemove', moveCursor);
@@ -26,6 +25,8 @@ function Cursor() {
             window.removeEventListener('mousemove', moveCursor);
         };
     }, [dispatch]);
+
+    if (window.innerWidth <= 768) return null; // Prevents rendering on mobile
 
     return (
         <div

@@ -67,7 +67,7 @@ const projects = [
         {
             image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
             altTag: 'Tiger in the forest',  
-        }
+        },
         ],
         languages: [
             "React", 
@@ -78,7 +78,7 @@ const projects = [
             "Jest", 
             "Node",
             "Figma"],
-        link: ''
+        link: 'https://benwheatleywebdev.netlify.app/'
     },
     {
         title: "RESTful API partOne",
@@ -105,7 +105,7 @@ const projects = [
             "swagger",
 
         ],
-        link: `https://github.com/BenDavidWheatley/redditFeeds`
+        link: 'https://github.com/BenDavidWheatley/RESTful_API_partOne'
     },
     {
         title: "RedditFeeds",
@@ -133,6 +133,7 @@ const projects = [
             "CSS",
             "Figma"
         ],
+        link: 'https://github.com/BenDavidWheatley/redditFeeds'
     },
     {
         title: 'Jammmin',
@@ -159,6 +160,65 @@ const projects = [
             "CSS",
             "Figma"
         ],
+        link: 'https://github.com/BenDavidWheatley/jammmin'
+    },
+    {
+        title: 'Online store full stack project',
+        description: `The project is a full-stack online store, developed for the CodeSpace boot camp. 
+        It features product viewing, cart management, user account creation, and newsletter subscription, 
+        with data interactions via APIs. The store allows users to browse products, modify their cart, sign up,
+        and log in. The backend handles account creation, password hashing, and cart management through local storage.
+        Additionally, the checkout process collects delivery details and uses the Google Maps API for location display. 
+        It's designed to demonstrate separating frontend and backend functionalities in web development.
+
+`,
+        images:[{
+            image: '',
+            altTag: 'Tiger in the forest',
+        },
+        {
+            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
+            altTag: 'Tiger in the forest',  
+        }
+        ],
+        languages: [
+            "HTML",
+            "CSS",
+            "JAVASCRIPT",
+            "PHP",
+            "SQL",
+            "API",
+            "Slim framework"
+        ],
+        link: 'https://github.com/BenDavidWheatley/onlineStoreFullStack'
+    },
+    {
+        title: 'SQL_Authorixation_app',
+        description: `The project is a full-stack online store, developed for the CodeSpace boot camp. 
+        It features product viewing, cart management, user account creation, and newsletter subscription, 
+        with data interactions via APIs. The store allows users to browse products, modify their cart, sign up,
+        and log in. The backend handles account creation, password hashing, and cart management through local storage.
+        Additionally, the checkout process collects delivery details and uses the Google Maps API for location display. 
+        It's designed to demonstrate separating frontend and backend functionalities in web development.
+
+`,
+        images:[{
+            image: '',
+            altTag: 'Tiger in the forest',
+        },
+        {
+            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
+            altTag: 'Tiger in the forest',  
+        }
+        ],
+        languages: [
+            "HTML",
+            "CSS",
+            "JAVASCRIPT",
+            "PHP",
+            "SQL"
+        ],
+        link: 'https://github.com/BenDavidWheatley/SQL_authorization_app'
     }
 ];
 

@@ -1,6 +1,6 @@
 .imageContainer{
-    width: 204px;
-    height: 150px;
+    width: 200px;
+    height: auto;
     border-radius: 7px;
 }
 .imageContainer img{
@@ -9,11 +9,9 @@
     border-radius: 7px;
 
 }
-
 @media only screen and (max-width: 488px){
     .imageContainer {
         width: 100%;
         height: 300px;
-
     }
-}
+} 

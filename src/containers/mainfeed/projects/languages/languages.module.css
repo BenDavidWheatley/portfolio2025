@@ -10,7 +10,7 @@
     min-width: 100px;
     border-radius: 100px;
     display: flex;
-    background-color: #FFD700;
+    background-color: #FFD7001a;
 }
 .languageContainer p {
     font-weight: 500;
@@ -19,6 +19,6 @@
     align-self: center;
     text-align: center;
     margin: auto;
-    color: black;
+    color: #FFD700bf;
 }
 

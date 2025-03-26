@@ -1,141 +1,151 @@
-/******** PROJECT CONTAINER ********/
+    /******** PROJECT CONTAINER ********/
 
-.projectContainer {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 863px;
-    height: auto;
-    min-height: 377px;
-    padding: 28px 60px 28px 31px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    transition: all 0.5s ease;
-    position: relative;
-    margin-top: 10px;
-}
-@media only screen and (max-width: 1040px){
-    .projectContainer{
-        max-width: 90%;
-        margin: 10px auto;
-    }
-}
-.projectContainer:after{
-    position: absolute;
-    content: '';
-    height: 0px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    border-radius: 7px;
-    transition: all 0.5s;
-    border-right: #101116 solid 1px;
-    border-bottom: #101116 solid 1px;
-    z-index: -1;
-}
-.projectContainer:hover:after{
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: 7px;
-    bottom: 0;
-    left: 0;
-    background-color: #B0C4DE0a;
-    border-right: #B0C4DE33 solid 1px;
-    border-bottom: #B0C4DE33 solid 1px;
-    transition: all 0.5s;    z-index: -1;
-}
-.projectContainer:hover p{
-    font-weight: 300;
-}
-
-/********* IMAGE CONTAINER ********/
-
-.imageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
-    padding-top: 5px;
-}
-
-/********* PROJECT INFO *********/
-
-.infoContainer {
-    width: 100%;
-    max-width: 533px;
-    position: relative;
-    justify-self: flex-end;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-}
-.projectH2 {
-    position: relative;
-    width: 100%;
-    margin-bottom: 7px;
-    font-size: 21px;
-    text-transform: uppercase;
-}
-.projectH2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 3px;
-    width: 100%;
-    height: 1px;  /* Adjust thickness as needed */
-    background-color: currentColor; /* Matches text color */
-}
-
-/******* LANGUAGES **********/
-
-.languageContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 7px;
-    width: 100%;
-    max-width: 533px;
-    position: absolute;
-    bottom: -30px;
-
-}
-@media only screen and (max-width: 1180px){
-    .infoContainer p:nth-child(2){
-        padding-bottom: 60px;
-    }
-}
-
-@media only screen and (max-width: 880px){
+    
     .projectContainer {
-        flex-direction: column-reverse;
-        padding: 20px 30px;
-       max-width: 100%;
-        margin: 20px 0px;
-     
-    }
-    .infoContainer{
-        max-width: 100%;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 863px;
         height: auto;
-        margin-bottom: 0px;
-        padding-bottom: 60px;
-    }
-    .imageContainer{
+        min-height: 377px;
+        padding: 28px 60px 28px 31px;
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .languageContainer {
+        justify-content: space-between;
+        gap: 20px;
+        transition: all 0.5s ease;
         position: relative;
-       bottom: -40px;
-       flex-wrap: wrap;
-       margin: auto;
-       justify-content: center;
+        margin-top: 10px;
     }
-}
-@media only screen and (max-width: 488px){
-    .languageContainer {
+    @media only screen and (max-width: 1040px){
+        .projectContainer{
+            max-width: 90%;
+            margin: 10px auto;
+        }
+    }
+    .projectContainer:after{
+        position: absolute;
+        content: '';
+        height: 0px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 7px;
+        transition: all 0.5s;
+        border-right: #101116 solid 1px;
+        border-bottom: #101116 solid 1px;
+        z-index: -1;
+    }
+    .projectContainer:hover:after{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        bottom: 0;
+        left: 0;
+        background-color: #B0C4DE0a;
+        border-right: #B0C4DE33 solid 1px;
+        border-bottom: #B0C4DE33 solid 1px;
+        transition: all 0.5s;    z-index: -1;
+    }
+    .projectContainer:hover p{
+        font-weight: 300;
+    }
+
+    /********* IMAGE CONTAINER ********/
+
+    .imageContainer {
+        display: flex;
+        flex-direction: column;
         justify-content: flex-start;
+        gap: 20px;
+        padding-top: 5px;
     }
-}
+    /********* PROJECT INFO *********/
+
+    .infoContainer {
+        width: 100%;
+        max-width: 533px;
+        position: relative;
+        justify-self: flex-end;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .projectH2 {
+        position: relative;
+        width: 100%;
+        margin-bottom: 7px;
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+    .projectH2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        width: 100%;
+        height: 1px;  /* Adjust thickness as needed */
+        background-color: currentColor; /* Matches text color */
+    }
+    .projectLink {
+        font-family: 'work sans';
+        font-size: 14px;
+        font-weight: 300;
+      
+        text-decoration: none;
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+    }
+
+    /******* LANGUAGES **********/
+
+    .languageContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 7px;
+        width: 100%;
+        max-width: 533px;
+        position: absolute;
+        bottom: -30px;
+
+    }
+    @media only screen and (max-width: 1180px){
+        .infoContainer p:nth-child(2){
+            padding-bottom: 60px;
+        }
+    }
+
+    @media only screen and (max-width: 880px){
+        .projectContainer {
+            flex-direction: column-reverse;
+            padding: 20px 30px;
+        max-width: 100%;
+            margin: 20px 0px;
+        
+        }
+        .infoContainer{
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+            padding-bottom: 60px;
+        }
+        .imageContainer{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .languageContainer {
+            position: relative;
+        bottom: -40px;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        }
+    }
+    @media only screen and (max-width: 488px){
+        .languageContainer {
+            justify-content: flex-start;
+        }
+    }

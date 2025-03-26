@@ -3,9 +3,10 @@ import Style from './mainfeed.module.css';
 import About from './about/About';
 import Projects from './projects/Projects';
 import Experience from './experience/Experience'
+import Footer from './footer/Footer';
+
 
 function Mainfeed(props) {
-
     const experience = props.experience;
     const projectData = props.projectData;
     console.log(experience);
@@ -22,6 +23,7 @@ function Mainfeed(props) {
                         description={project.description}
                         images={project.images}
                         languages={project.languages}
+                        link={project.link}
                     />
                 )
             }
@@ -39,6 +41,7 @@ function Mainfeed(props) {
                 )
             }
             )}
+            <Footer  />
             
         </section>
     )
