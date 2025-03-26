@@ -18,7 +18,7 @@ import Languages from './languages/Languages';
                         <p>{description}</p>
                         <div>
                             <a href={link} target="_blank" className={Style.projectLink} rel="noreferrer">View project</a>
-                            <a target="_blank" className={Style.projectLink} rel="noreferrer">more info</a>
+                           
                         </div>
 
                         

@@ -6,7 +6,7 @@ import Style from './cursor.module.css';
 function Cursor() {
     const dispatch = useDispatch();
     const { position, isHovering } = useSelector((state) => state.cursor);
-    const trailRef = useRef([]);
+ 
 
     useEffect(() => {
         const isDesktop = window.innerWidth > 768;
