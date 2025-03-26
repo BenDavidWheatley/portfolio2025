@@ -38,6 +38,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html, body {
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevents horizontal shifting */
+  overflow-y: hidden; /* If vertical issues occur */
+}
+
 
 /*
 @media only screen and (max-width: 878px){
