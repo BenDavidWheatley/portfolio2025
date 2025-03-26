@@ -153,9 +153,7 @@
     .mainHeader {
         font-size: 28px;
         width: 204px;
-        top: 50%;
-        transform: translateY(-100px);
-
+        top: calc(50vh - 100px);
         left: calc(50vw - (204px / 2));
     }
     .subheader {
@@ -183,23 +181,21 @@
     0%{
         font-size: 28px;
         position: absolute;
-        width: 204px;
-        top: 50%;
-        transform: translateY(-100px);
+        width: 348px;
+        top: calc(50vh - 100px);
         left: calc(50vw - (204px / 2));
     }
     10%{
         font-size: 28px;
         position: absolute;
-        width: 204px;
-        top: 50%;
-        transform: translateY(-100px);
+        width: 348px;
+        top: calc(50vh - 100px);
         left: calc(50vw - (204px / 2));
     }
     60%{
         font-size: 28px;
         position: absolute;
-        width: 204px;
+        width: 348px;
         top: 30px;
         left: 30px;
     }
