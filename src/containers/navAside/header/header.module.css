@@ -3,37 +3,41 @@
 
 .enterSite{
     position: absolute;
-    width: 50vw; /* Updated to relative width */
+    width: 180px;
     height: 30px;
     border-radius: 50px;
     border: none;
     top: 50vh;
-    left: calc(50vw - 25vw); /* Updated to make it more responsive */
+    left: calc(50vw - 90px);
     font-family: "Cormorant Garamond", serif;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 4vw; /* Updated to relative font size */
+    font-size: 18px;
     margin-top: 10px;
     cursor: pointer;   
     animation: displayOn 5s ease-in forwards;
     transition: all 0.5s ease ;
 }
-
 .enterSite:hover{
     background-color: #FFD700;
     transition: all 0.5s ease;
 }
+@media only screen and (max-width: 878px){
+    .enterSite{
+        font-size: 18px;
+        width: 120px;
+        left: calc(50vw - 60px);
+    }
 
+}
 .noDisplay {
   display: none;
 }
-
 .mainHeaderThree{
     position: absolute;
     color: #101116;
     animation: colorChange 2s ease-in-out 3s forwards;
 }
-
 .headerDiv{
     height: 95px;
 }
@@ -41,27 +45,23 @@
 /* Main headers starting position */
 .mainHeader {
     position: absolute;
-    width: 50vw; /* Updated to relative width */
-    top: calc(50vh - 10vw); /* Adjusted for smaller screens */
-    left: calc(50vw - 25vw); /* Adjusted for centering */
-    font-size: 5vw; /* Relative font size */
+    width: 348px;
+    top: calc(50vh - 100px);
+    left: calc(50vw - (348px / 2));
     animation: colorChange 2s ease-in;
 }
 
 .subheader{
     position: absolute;
-    width: 50vw; /* Adjusted for responsiveness */
-    top: calc(50vh - 20vw); /* Adjusted for smaller devices */
-    left: calc(50vw - 25vw); /* Adjusted for centering */
+    width: 244px;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 122px);
     color: #101116;
-    font-size: 3vw; /* Relative font size */
     animation: colorChange 2s ease-in 1s forwards;
 }
-
 .subheaderAnimation {
     animation: headerTwo 3.2s ease-in-out;
 }
-
 .mainHeaderAnimation {
     animation: mainHeader 3.2s ease-in-out;
 }
@@ -73,15 +73,15 @@
         color: #101116;
     }
     40%{
-        background-color: #101116;
-        color: #101116;
+            background-color: #101116;
+            color: #101116;
+        
     }
     100%{
         background-color: white;
         color: black;
     }
 }
-
 @keyframes colorChange {
     0%{
         color: #101116;
@@ -93,29 +93,28 @@
         color: #E6E6FA;
     }
 }
-
 @keyframes mainHeader {
     0%{
         position: absolute;
-        width: 50vw; /* Adjusted for responsiveness */
-        top: calc(50vh - 10vw);
-        left: calc(50vw - 25vw);
+        width: 348px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (348px / 2));
     }
     20%{
         position: absolute;
-        width: 50vw;
-        top: calc(50vh - 10vw);
-        left: calc(50vw - 25vw);
+        width: 348px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (348px / 2));
     }
     60%{
         position: absolute;
-        width: 50vw;
+        width: 348px;
         top: 30px;
         left: 30px;
     }
     100% {
         position: absolute;
-        width: 50vw;
+        width: 348px;
         top: 30px;
         left: 30px;
     }
@@ -124,49 +123,50 @@
 @keyframes headerTwo {
     0%{
         position: absolute;
-        width: 50vw;
-        top: calc(50vh - 20vw);
-        left: calc(50vw - 25vw);
+        width: 244px;
+        top: calc(50vh - 50px);
+        left: calc(50vw - 122px);
     }
     30%{
         position: absolute;
-        width: 50vw;
-        top: calc(50vh - 20vw);
-        left: calc(50vw - 25vw);
+        width: 244px;
+        top: calc(50vh - 50px);
+        left: calc(50vw - 122px);
     }
     80%{
         position: absolute;
-        width: 50vw;
+        width: 244px;
         top: 88px;
         left: 30px;
     }
     100%{
         position: absolute;
-        width: 50vw;
+        width: 244px;
         top: 88px;
         left: 30px;
     }
 }
 
 /********* Header Animations for mobile *********/
-@media only screen and (max-width: 480px){
+
+@media only screen and (max-width: 878px){
     .mainHeader {
-        font-size: 6vw; /* Adjusted for smaller mobile screens */
-        width: 60vw; /* More flexible width */
-        top: calc(50vh - 15vw);
-        left: calc(50vw - 30vw); /* More responsive centering */
+        font-size: 28px;
+        width: 204px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (204px / 2));
     }
     .subheader {
-        font-size: 4vw; /* Adjusted font size */
-        width: 60vw; /* Adjusted width */
+        font-size: 18px;
+        width: 146px;
         margin-top: 0;
-        top: calc(50vh - 12vw); /* Adjusted positioning */
-        left: calc(50vw - 30vw); /* Adjusted centering */
+        top: calc(50vh - 65px);
+        left: calc(50vw - 73px);
     }
     .mainHeaderThree{
-        font-size: 4vw; /* Adjusted font size */
-        top: 20vw; /* Adjusted for smaller screens */
-    }
+            font-size: 16px;
+            top: 94px;
+        }
     
     .mainHeaderAnimation{
         animation: mainHeaderMobile 3.2s ease-in-out forwards;
@@ -176,77 +176,75 @@
     }
 }
 
+
 @keyframes mainHeaderMobile {
     0%{
-        font-size: 6vw;
+        font-size: 28px;
         position: absolute;
-        width: 60vw;
-        top: calc(50vh - 15vw);
-        left: calc(50vw - 30vw);
+        width: 348px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (204px / 2));
     }
     10%{
-        font-size: 6vw;
+        font-size: 28px;
         position: absolute;
-        width: 60vw;
-        top: calc(50vh - 15vw);
-        left: calc(50vw - 30vw);
+        width: 348px;
+        top: calc(50vh - 100px);
+        left: calc(50vw - (204px / 2));
     }
     60%{
-        font-size: 6vw;
+        font-size: 28px;
         position: absolute;
-        width: 60vw;
+        width: 348px;
         top: 30px;
         left: 30px;
     }
     100% {
-        font-size: 6vw;
+        font-size: 28px;
         position: absolute;
-        width: 60vw;
+        width: 348px;
         top: 30px;
         left: 30px;
     }
 }
-
 @keyframes headerTwoMobile {
     0%{
         position: absolute;
-        width: 60vw;
-        top: calc(50vh - 12vw);
-        left: calc(50vw - 30vw);
-        font-size: 4vw;
+        width: 244px;
+        top: calc(50vh - 65px);
+        left: calc(50vw - 73px);
+        font-size: 18px;
     }
     30%{
         position: absolute;
-        width: 60vw;
-        top: calc(50vh - 12vw);
-        left: calc(50vw - 30vw);
-        font-size: 4vw;
+        width: 244px;
+        top: calc(50vh - 65px);
+        left: calc(50vw - 73px);
+        font-size: 18px;
     }
     80%{
         position: absolute;
-        width: 60vw;
+        width: 244px;
         top: 68px;
         left: 30px;
-        font-size: 4vw;
+        font-size: 18px;
     }
     100%{
         position: absolute;
-        width: 60vw;
+        width: 244px;
         top: 68px;
         left: 30px;
-        font-size: 4vw;
+        font-size: 18px;
     }
 }
-
 /* Background with animation */
 .background{
     background-color: #101116;
     height: 100vh;
     width: 100vw;
-    transform: translateX(-30px) translateY(-30px);
+    transform: translateX(-30px) translatey(-30px);
     opacity: 1;
 }
-
 .backgroundFade {
     animation: backgroundFade 3s linear;
 }
@@ -256,21 +254,27 @@
         background-color: #101116;
         height: 100vh;
         width: 100vw;
-        transform: translateX(-30px) translateY(-30px);
+        transform: translateX(-30px) translatey(-30px);
         opacity: 1;
     }
     90% {
         background-color: #101116;
         height: 100vh;
         width: 100vw;
-        transform: translateX(-30px) translateY(-30px);
+        transform: translateX(-30px) translatey(-30px);
         opacity: 1;
-    }
+        }
     100% {
         opacity: 0;
         background-color: #101116;
         height: 100vh;
         width: 100vw;
-        transform: translateX(-30px) translateY(-30px);
+        transform: translateX(-30px) translatey(-30px);
+     
     }
 }
+
+
+
+
+
