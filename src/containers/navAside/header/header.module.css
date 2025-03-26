@@ -3,20 +3,20 @@
 
 .enterSite{
     position: absolute;
-    width: 180px;
+    width: 50vw; /* Updated to relative width */
     height: 30px;
     border-radius: 50px;
     border: none;
-    top: 50vh; /* Change to 50vh instead of 50dvh */
-    left: calc(50vw - 90px); /* Change to 50vw */
+    top: 50vh;
+    left: calc(50vw - 25vw); /* Updated to make it more responsive */
     font-family: "Cormorant Garamond", serif;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 4vw; /* Updated to relative font size */
     margin-top: 10px;
     cursor: pointer;   
     animation: displayOn 5s ease-in forwards;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease ;
 }
 
 .enterSite:hover{
@@ -25,7 +25,7 @@
 }
 
 .noDisplay {
-    display: none;
+  display: none;
 }
 
 .mainHeaderThree{
@@ -41,18 +41,20 @@
 /* Main headers starting position */
 .mainHeader {
     position: absolute;
-    width: 348px;
-    top: calc(50vh - 100px);
-    left: calc(50vw - (348px / 2));
+    width: 50vw; /* Updated to relative width */
+    top: calc(50vh - 10vw); /* Adjusted for smaller screens */
+    left: calc(50vw - 25vw); /* Adjusted for centering */
+    font-size: 5vw; /* Relative font size */
     animation: colorChange 2s ease-in;
 }
 
 .subheader{
     position: absolute;
-    width: 244px;
-    top: calc(50vh - 50px);
-    left: calc(50vw - 122px);
+    width: 50vw; /* Adjusted for responsiveness */
+    top: calc(50vh - 20vw); /* Adjusted for smaller devices */
+    left: calc(50vw - 25vw); /* Adjusted for centering */
     color: #101116;
+    font-size: 3vw; /* Relative font size */
     animation: colorChange 2s ease-in 1s forwards;
 }
 
@@ -95,25 +97,25 @@
 @keyframes mainHeader {
     0%{
         position: absolute;
-        width: 348px;
-        top: calc(50vh - 100px);
-        left: calc(50vw - (348px / 2));
+        width: 50vw; /* Adjusted for responsiveness */
+        top: calc(50vh - 10vw);
+        left: calc(50vw - 25vw);
     }
     20%{
         position: absolute;
-        width: 348px;
-        top: calc(50vh - 100px);
-        left: calc(50vw - (348px / 2));
+        width: 50vw;
+        top: calc(50vh - 10vw);
+        left: calc(50vw - 25vw);
     }
     60%{
         position: absolute;
-        width: 348px;
+        width: 50vw;
         top: 30px;
         left: 30px;
     }
     100% {
         position: absolute;
-        width: 348px;
+        width: 50vw;
         top: 30px;
         left: 30px;
     }
@@ -122,55 +124,53 @@
 @keyframes headerTwo {
     0%{
         position: absolute;
-        width: 244px;
-        top: calc(50vh - 50px);
-        left: calc(50vw - 122px);
+        width: 50vw;
+        top: calc(50vh - 20vw);
+        left: calc(50vw - 25vw);
     }
     30%{
         position: absolute;
-        width: 244px;
-        top: calc(50vh - 50px);
-        left: calc(50vw - 122px);
+        width: 50vw;
+        top: calc(50vh - 20vw);
+        left: calc(50vw - 25vw);
     }
     80%{
         position: absolute;
-        width: 244px;
+        width: 50vw;
         top: 88px;
         left: 30px;
     }
     100%{
         position: absolute;
-        width: 244px;
+        width: 50vw;
         top: 88px;
         left: 30px;
     }
 }
 
 /********* Header Animations for mobile *********/
-@media only screen and (max-width: 480px){ /* Adjusted breakpoint to target smaller screens */
+@media only screen and (max-width: 480px){
     .mainHeader {
-        font-size: 24px; /* Adjust font size */
-        width: 240px; /* Adjust width */
-        top: calc(50vh - 80px); /* Adjust top position */
-        left: calc(50vw - 120px); /* Adjust left position */
+        font-size: 6vw; /* Adjusted for smaller mobile screens */
+        width: 60vw; /* More flexible width */
+        top: calc(50vh - 15vw);
+        left: calc(50vw - 30vw); /* More responsive centering */
     }
-
     .subheader {
-        font-size: 16px; /* Adjust font size */
-        width: 180px; /* Adjust width */
-        top: calc(50vh - 40px); /* Adjust top position */
-        left: calc(50vw - 90px); /* Adjust left position */
+        font-size: 4vw; /* Adjusted font size */
+        width: 60vw; /* Adjusted width */
+        margin-top: 0;
+        top: calc(50vh - 12vw); /* Adjusted positioning */
+        left: calc(50vw - 30vw); /* Adjusted centering */
     }
-
-    .mainHeaderThree {
-        font-size: 14px;
-        top: 94px;
+    .mainHeaderThree{
+        font-size: 4vw; /* Adjusted font size */
+        top: 20vw; /* Adjusted for smaller screens */
     }
-
+    
     .mainHeaderAnimation{
         animation: mainHeaderMobile 3.2s ease-in-out forwards;
     }
-
     .subheaderAnimation {
         animation: headerTwoMobile 3.2s ease-in-out forwards;
     }
@@ -178,30 +178,30 @@
 
 @keyframes mainHeaderMobile {
     0%{
-        font-size: 24px;
+        font-size: 6vw;
         position: absolute;
-        width: 240px;
-        top: calc(50vh - 80px);
-        left: calc(50vw - (240px / 2));
+        width: 60vw;
+        top: calc(50vh - 15vw);
+        left: calc(50vw - 30vw);
     }
     10%{
-        font-size: 24px;
+        font-size: 6vw;
         position: absolute;
-        width: 240px;
-        top: calc(50vh - 80px);
-        left: calc(50vw - (240px / 2));
+        width: 60vw;
+        top: calc(50vh - 15vw);
+        left: calc(50vw - 30vw);
     }
     60%{
-        font-size: 24px;
+        font-size: 6vw;
         position: absolute;
-        width: 240px;
+        width: 60vw;
         top: 30px;
         left: 30px;
     }
     100% {
-        font-size: 24px;
+        font-size: 6vw;
         position: absolute;
-        width: 240px;
+        width: 60vw;
         top: 30px;
         left: 30px;
     }
@@ -210,40 +210,40 @@
 @keyframes headerTwoMobile {
     0%{
         position: absolute;
-        width: 180px;
-        top: calc(50vh - 40px);
-        left: calc(50vw - 90px);
-        font-size: 16px;
+        width: 60vw;
+        top: calc(50vh - 12vw);
+        left: calc(50vw - 30vw);
+        font-size: 4vw;
     }
     30%{
         position: absolute;
-        width: 180px;
-        top: calc(50vh - 40px);
-        left: calc(50vw - 90px);
-        font-size: 16px;
+        width: 60vw;
+        top: calc(50vh - 12vw);
+        left: calc(50vw - 30vw);
+        font-size: 4vw;
     }
     80%{
         position: absolute;
-        width: 180px;
+        width: 60vw;
         top: 68px;
         left: 30px;
-        font-size: 16px;
+        font-size: 4vw;
     }
     100%{
         position: absolute;
-        width: 180px;
+        width: 60vw;
         top: 68px;
         left: 30px;
-        font-size: 16px;
+        font-size: 4vw;
     }
 }
 
 /* Background with animation */
 .background{
     background-color: #101116;
-    height: 100vh; /* Change to 100vh */
-    width: 100vw; /* Change to 100vw */
-    transform: translateX(-30px) translatey(-30px);
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-30px) translateY(-30px);
     opacity: 1;
 }
 
@@ -254,23 +254,23 @@
 @keyframes backgroundFade {
     0% {
         background-color: #101116;
-        height: 100vh; /* Change to 100vh */
-        width: 100vw; /* Change to 100vw */
-        transform: translateX(-30px) translatey(-30px);
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(-30px) translateY(-30px);
         opacity: 1;
     }
     90% {
         background-color: #101116;
-        height: 100vh; /* Change to 100vh */
-        width: 100vw; /* Change to 100vw */
-        transform: translateX(-30px) translatey(-30px);
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(-30px) translateY(-30px);
         opacity: 1;
     }
     100% {
         opacity: 0;
         background-color: #101116;
-        height: 100vh; /* Change to 100vh */
-        width: 100vw; /* Change to 100vw */
-        transform: translateX(-30px) translatey(-30px);
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(-30px) translateY(-30px);
     }
 }

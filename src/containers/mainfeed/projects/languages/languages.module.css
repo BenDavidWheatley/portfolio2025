@@ -21,4 +21,14 @@
     margin: auto;
     color: #40E0D0bf;
 }
-
+@media screen and (max-width: 660px) {
+    .languageContainer {
+        height: 25px;
+        width: 31%;
+        min-width: 80px;
+    }
+    .languageContainer p {
+        font-size: 10px;
+    }
+    
+}
