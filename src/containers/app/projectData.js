@@ -3,14 +3,15 @@ const MacTwo= require('../../media/MACTwo.png');
 
 const projects = [
     {
-        title: "Motion Analysis Corp",
-        description: `The website Motion Analysis is built using WordPress and the Oxygen theme. 
-            It offers motion capture solutions, showcasing various hardware and software products designed for 
-            industries like sports, research, and animation. The design is sleek and professional, emphasizing its 
-            cutting-edge technology. Key features include sections for software products, hardware offerings 
-            (such as cameras and markers), applications (like sports performance and VR training), and case studies. 
-            This website is focused on providing detailed information about its products and services, as well as 
-            offering a demo booking feature for potential clients.`,
+        title: "Motion Analysis",
+        description: `Motion Analysis is a US-based manufacturer of motion capture technology. 
+        In 2021 I came on board to rebuild their website, and I have been managing and improving it ever since.
+        I built the website using WordPress and the Oxygen theme. The design is sleek and professional, emphasizing i
+        ts cutting-edge technology. Key features include sections for software products, hardware offerings 
+        (such as cameras and markers), applications (like sports performance and VR training), 
+        case studies as well as support, sales and demo enquiry forms that integrate with the company’s CRM system (sales).
+        We're in the early stages now of building an online shop to sell spare parts.`,
+
         images:[{
             image: MacOne,
             altTag: '',
@@ -22,6 +23,8 @@ const projects = [
         ],
         languages: [
             "Wordpress", 
+            "wooCommerce",
+            "Oxygen Theme",
             "Javascript", 
             "HTML", 
             "CSS", 
@@ -30,8 +33,11 @@ const projects = [
         link: "https://motionanalysis.com/"
     }, 
     {
-        title: "Thembisa trust - coming soon",
-        description: "Launching soon", 
+        title: "The Thembisa trust - coming soon",
+        description: `Having lived in South Africa for a few years, I am passionate about the vibrant 
+            country and in upskilling local communities. The way I help is as a Trustee of The Thembisa Trust, 
+            an Oxford-based charity that raises money to support grassroots projects in Southern Africa. 
+            I put my web development skills to use here too. We are currently redesigning and developing the charity's website.`, 
         images:[{
             image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
             altTag: 'Tiger in the forest',
@@ -42,51 +48,24 @@ const projects = [
         }
         ],
         languages: [
+            "Figma",
             "Wordpress",
-            "Oxygen Theme",
             "Javascript",
             "HTML",
             "CSS",
-            "CAF integration",
-            "Figma"
+            "CAF integration"
         ],
         link: "https://thembisatrust.org/"
     },
+   
     {
-        title: "Portfolio 2025",
-        description: `This website is a personal portfolio showcasing my skills and projects. 
-            It is built using React, Redux, and styled-components, with a focus on modern design and user experience. 
-            The site features a homepage with an animated hero section, an about section with information about me and my skills, 
-            a projects section with detailed descriptions and images, and a contact form for potential clients. 
-            The design is clean and minimalistic, with a dark theme and bold typography. Key features include a responsive layout, 
-            smooth animations, and interactive elements like hover effects and scroll animations.`,
-        images:[{
-            image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
-            altTag: 'Tiger in the forest',
-        },
-        {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
-        },
-        ],
-        languages: [
-            "React", 
-            "Redux toolkit", 
-            "Javascript", 
-            "HTML", 
-            "CSS", 
-            "Jest", 
-            "Node",
-            "Figma"],
-        link: 'https://benwheatleywebdev.netlify.app/'
-    },
-    {
-        title: "RESTful API partOne",
-        description: `This Node.js-based RESTful API, developed for a CodeCademy project, 
-            implements CRUD operations for managing data. Built with Node.js and Express, 
-            it handles HTTP routing efficiently. The app utilizes Passport for password sanitization 
-            and PostgreSQL for database management. It emphasizes scalability, best practices, and 
-            includes Swagger for API documentation, providing an interactive interface for exploring API endpoints.`,
+        title: "eCommerce application REST API",
+        description: `This REST API allows eCommerce users to register and login via the API and to manage accounts, 
+            carts and orders. Developed for a CodeCademy project, it implements CRUD operations for managing data. 
+            Built with Node.js and Express, it handles HTTP routing efficiently. The app utilizes Passport for password 
+            sanitization and PostgreSQL for database management. It emphasizes scalability, best practices, and includes 
+            Swagger for API documentation, providing an interactive interface for exploring API endpoints. 
+            I am currently working on the full-stack element, which will link the front-end to the back.`,
         images:[{
             image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
             altTag: 'Tiger in the forest',
@@ -108,13 +87,13 @@ const projects = [
         link: 'https://github.com/BenDavidWheatley/RESTful_API_partOne'
     },
     {
-        title: "RedditFeeds",
-        description: `The "RedditFeeds" project, wireframed and designed in Figma, uses React and 
-            Redux Toolkit for state management and fetching data from Reddit's public API. The app allows 
-            users to view posts from subreddits, displaying titles, images, and links. It leverages 
-            local storage to save titles of user-selected subreddits, dynamically creating personalized feeds. 
-            The use of React for components and Redux Toolkit for efficient state handling ensures scalability 
-            and smooth interaction, while the Figma wireframe guided the app's design.`,
+        title: "Reddit Feeds app",
+        description: `The "Reddit Feeds" project - wireframed and designed in Figma - uses React and Redux Toolkit 
+            for state management and fetching data from Reddit's public API. The app allows users to view and 
+            filter posts and comments from subreddits, displaying titles, images, and links. 
+            It leverages local storage to save titles of user-selected subreddits, dynamically 
+            creating personalised feeds. The use of React for components and Redux Toolkit for efficient state 
+            handling ensures scalability and smooth interaction. Unit tests for components used Jest.`,
         images:[{
             image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
             altTag: 'Tiger in the forest',
@@ -127,22 +106,22 @@ const projects = [
         languages: [
             "React",
             "Redux toolkit",
-            "API",
+            "Reddit API",
             "Javascript",
             "HTML",
             "CSS",
+            "Jest",
             "Figma"
         ],
         link: 'https://github.com/BenDavidWheatley/redditFeeds'
     },
     {
-        title: 'Jammmin',
-        description: `The Jammmin app is built using React and integrates with the Spotify API to 
-            allow users to search and create custom playlists. Users can enter search terms, view Spotify's 
-            results, and add tracks to their playlists. It leverages React's component-based architecture for 
-            dynamic content and user interactions, providing a seamless experience. The app also incorporates 
-            OAuth for Spotify authentication, making it easy for users to access and manage their music libraries 
-            directly through the app.`,
+        title: 'SpotifyJammmin app',
+        description: `The 'Jammmin' app is built using React and integrates with the Spotify API to allow users to 
+            search and create custom playlists. Users can enter search terms, view results from Spotify and add tracks 
+            to their playlists. The app leverages React's component-based architecture for dynamic content and user interactions, 
+            providing a seamless experience. The app also incorporates OAuth for Spotify authentication, making it 
+            easy for users to access and manage their music libraries directly through the app.`,
         images:[{
             image: '',
             altTag: 'Tiger in the forest',
@@ -154,7 +133,7 @@ const projects = [
         ],
         languages: [
             "React",
-            "API",
+            "Spotify API",
             "Javascript",
             "HTML",
             "CSS",
@@ -163,15 +142,13 @@ const projects = [
         link: 'https://github.com/BenDavidWheatley/jammmin'
     },
     {
-        title: 'Online store full stack project',
+        title: 'Online store - Wheatley studios',
         description: `The project is a full-stack online store, developed for the CodeSpace boot camp. 
-        It features product viewing, cart management, user account creation, and newsletter subscription, 
-        with data interactions via APIs. The store allows users to browse products, modify their cart, sign up,
-        and log in. The backend handles account creation, password hashing, and cart management through local storage.
-        Additionally, the checkout process collects delivery details and uses the Google Maps API for location display. 
-        It's designed to demonstrate separating frontend and backend functionalities in web development.
-
-`,
+            It features product viewing, cart management, user account creation, and newsletter subscription, 
+            with data interactions via APIs. The store allows users to browse products, modify their cart, sign up, 
+            and log in. The backend handles account creation, password hashing, and cart management through local storage. 
+            Additionally, the checkout process collects delivery details and uses the Google Maps API for location display. 
+            It's designed to demonstrate separating frontend and backend functionalities in web development.`,
         images:[{
             image: '',
             altTag: 'Tiger in the forest',
@@ -193,15 +170,12 @@ const projects = [
         link: 'https://github.com/BenDavidWheatley/onlineStoreFullStack'
     },
     {
-        title: 'SQL_Authorixation_app',
-        description: `The project is a full-stack online store, developed for the CodeSpace boot camp. 
-        It features product viewing, cart management, user account creation, and newsletter subscription, 
-        with data interactions via APIs. The store allows users to browse products, modify their cart, sign up,
-        and log in. The backend handles account creation, password hashing, and cart management through local storage.
-        Additionally, the checkout process collects delivery details and uses the Google Maps API for location display. 
-        It's designed to demonstrate separating frontend and backend functionalities in web development.
-
-`,
+        title: 'SQL - Authorization - app for Inner city library',
+        description: `This web app was developed using PHP, MySQL, and HTML. 
+            It allows librarians and library members to access book details online with secure authentication. 
+            Members can search for books, while librarians have additional access to manage records and search for authors. 
+            The database structure includes linked tables for books and authors, enabling organized data retrieval. 
+            The app also features sorting options for books, authors, and genres.`,
         images:[{
             image: '',
             altTag: 'Tiger in the forest',
@@ -216,7 +190,7 @@ const projects = [
             "CSS",
             "JAVASCRIPT",
             "PHP",
-            "SQL"
+            "MySQL"
         ],
         link: 'https://github.com/BenDavidWheatley/SQL_authorization_app'
     }

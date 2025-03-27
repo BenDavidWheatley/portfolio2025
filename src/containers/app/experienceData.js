@@ -1,3 +1,31 @@
+const myLanguages = [
+    "html",
+    "css",
+    "javascript",
+    "php",
+    "c#",
+    "sql",
+    "PostgresSQL",
+    "MySQL",
+    "React",
+    "Redux",
+    "vue",
+    "jquery",
+    "node",
+    "Express",
+    "Slim framework",
+    "Passport",
+    "API",
+    "swagger",
+    "Jest",
+    "Git",
+    "Command line",
+    "wordpress",
+    "wooCommerce",
+    "Figma",
+    "bootstrap"
+];
+
 const experience = [
     {
         title: 'Freelance Web Developer',
@@ -40,4 +68,4 @@ const experience = [
     }
 ]
 
-export default experience;
+export { experience, myLanguages };

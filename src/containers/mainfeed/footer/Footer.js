@@ -8,7 +8,7 @@ function Footer() {
 
     return (
         <section data-testid="footer" className={entered? Style.footer : Style.noDisplay}>
-             <p>Designed in Figma - built in react ©2025</p> 
+             <p>V1.0: Designed in Figma - Built with React ©2025</p> 
         </section>
     )
 }

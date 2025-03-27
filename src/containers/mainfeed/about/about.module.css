@@ -17,13 +17,14 @@
     text-decoration: none;
     position: relative;
     overflow: hidden;
+    color: #40E0D0;
 }
 .emailMe:after{
     position: absolute;
     content: '';
     width: 0px;
     height: 1px;
-    background-color: white;
+    background-color: #40E0D0;
     left: 0px;
     bottom: 0;
     transition: all 0.3s ease;
@@ -31,7 +32,7 @@
 .emailMe:hover:after{
     width: 100%;
     height: 1px;
-    background-color: white;
+    background-color: #40E0D0;
     left: 0;
     bottom: 0;
     transition: all 0.3s ease;
@@ -47,6 +48,16 @@
     width: 30px;
     fill: white;
 
+}
+.languageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
 }
 
 @media only screen and (max-width: 1040px){
