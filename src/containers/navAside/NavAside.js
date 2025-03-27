@@ -10,7 +10,7 @@ function NavAside() {
             <Header />
             <Navigation />   
             <div className={Style.imageContainer}>
-                <img src={myImage} className={Style.myImage}/>    
+                <img src={myImage} className={Style.myImage} alt="I'm Ben wheatley"/>    
             </div>
             
         </section>
