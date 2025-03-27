@@ -30,32 +30,8 @@ const projects = [
             "CSS", 
             "PHP", 
             "Figma"],
-        link: "https://motionanalysis.com/"
-    }, 
-    {
-        title: "The Thembisa trust - coming soon",
-        description: `Having lived in South Africa for a few years, I am passionate about the vibrant 
-            country and in upskilling local communities. The way I help is as a Trustee of The Thembisa Trust, 
-            an Oxford-based charity that raises money to support grassroots projects in Southern Africa. 
-            I put my web development skills to use here too. We are currently redesigning and developing the charity's website.`, 
-        images:[{
-            image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
-            altTag: 'Tiger in the forest',
-        },
-        {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
-        }
-        ],
-        languages: [
-            "Figma",
-            "Wordpress",
-            "Javascript",
-            "HTML",
-            "CSS",
-            "CAF integration"
-        ],
-        link: "https://thembisatrust.org/"
+        link: false,
+        site: "https://motionanalysis.com/"
     },
    
     {
@@ -84,7 +60,8 @@ const projects = [
             "swagger",
 
         ],
-        link: 'https://github.com/BenDavidWheatley/RESTful_API_partOne'
+        link: 'https://github.com/BenDavidWheatley/RESTful_API_partOne',
+        site: false
     },
     {
         title: "Reddit Feeds app",
@@ -113,10 +90,11 @@ const projects = [
             "Jest",
             "Figma"
         ],
-        link: 'https://github.com/BenDavidWheatley/redditFeeds'
+        link: 'https://github.com/BenDavidWheatley/redditFeeds',
+        site: false
     },
     {
-        title: 'SpotifyJammmin app',
+        title: 'Spotify Jammmin app',
         description: `The 'Jammmin' app is built using React and integrates with the Spotify API to allow users to 
             search and create custom playlists. Users can enter search terms, view results from Spotify and add tracks 
             to their playlists. The app leverages React's component-based architecture for dynamic content and user interactions, 
@@ -139,7 +117,8 @@ const projects = [
             "CSS",
             "Figma"
         ],
-        link: 'https://github.com/BenDavidWheatley/jammmin'
+        link: 'https://github.com/BenDavidWheatley/jammmin',
+        site: 'https://jammminbeats.netlify.app/'
     },
     {
         title: 'Online store - Wheatley studios',
@@ -167,7 +146,8 @@ const projects = [
             "API",
             "Slim framework"
         ],
-        link: 'https://github.com/BenDavidWheatley/onlineStoreFullStack'
+        link: 'https://github.com/BenDavidWheatley/onlineStoreFullStack',
+        site: false
     },
     {
         title: 'SQL - Authorization - app for Inner city library',
@@ -192,7 +172,35 @@ const projects = [
             "PHP",
             "MySQL"
         ],
-        link: 'https://github.com/BenDavidWheatley/SQL_authorization_app'
+        link: 'https://github.com/BenDavidWheatley/SQL_authorization_app',
+        site: false
+    },
+
+    {
+        title: "The Thembisa trust - coming soon",
+        description: `Having lived in South Africa for a few years, I am passionate about the vibrant 
+            country and in upskilling local communities. The way I help is as a Trustee of The Thembisa Trust, 
+            an Oxford-based charity that raises money to support grassroots projects in Southern Africa. 
+            I put my web development skills to use here too. We are currently redesigning and developing the charity's website.`, 
+        images:[{
+            image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
+            altTag: 'Tiger in the forest',
+        },
+        {
+            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
+            altTag: 'Tiger in the forest',  
+        }
+        ],
+        languages: [
+            "Figma",
+            "Wordpress",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "CAF integration"
+        ],
+        link: false,
+        site: "https://thembisatrust.org/"
     }
 ];
 

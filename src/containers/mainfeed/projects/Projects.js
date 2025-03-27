@@ -4,7 +4,7 @@ import Languages from './languages/Languages';
 
     function Project(props) {
 
-        const { title, description, languages, link } = props;
+        const { title, description, languages, link, site } = props;
         console.log('this is the link - ' + link)
         return (
             <section 
@@ -17,7 +17,8 @@ import Languages from './languages/Languages';
                         <h2 className={Style.projectH2}>{title}</h2>
                         <p>{description}</p>
                         <div>
-                            <a href={link} target="_blank" className={Style.projectLink} rel="noreferrer">View project</a>
+                            <a href={link} target="_blank" className={Style.projectLink} rel="noreferrer">View project code</a>
+                            <a href={site} target="_blank" className={site? Style.projectLink: Style.noDisplay} rel="noreferrer">View Site</a>
                            
                         </div>
 
