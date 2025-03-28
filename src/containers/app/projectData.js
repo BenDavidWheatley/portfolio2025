@@ -1,6 +1,3 @@
-const MacOne= require('../../media/MACOne.png');
-const MacTwo= require('../../media/MACTwo.png');
-
 const projects = [
     {
         title: "Motion Analysis",
@@ -13,12 +10,12 @@ const projects = [
         We're in the early stages now of building an online shop to sell spare parts.`,
 
         images:[{
-            image: MacOne,
+            image: false,
             altTag: '',
         },
         {
-            image: MacTwo,
-            altTag: 'Tiger in the forest',  
+            image: false,
+            altTag: '',  
         }
         ],
         languages: [
@@ -43,12 +40,12 @@ const projects = [
             Swagger for API documentation, providing an interactive interface for exploring API endpoints. 
             I am currently working on the full-stack element, which will link the front-end to the back.`,
         images:[{
-            image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
-            altTag: 'Tiger in the forest',
+            image: false,
+            altTag: ''
         },
         {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
+            image: false,
+            altTag: ''
         }
         ],
         languages: [
@@ -72,12 +69,12 @@ const projects = [
             creating personalised feeds. The use of React for components and Redux Toolkit for efficient state 
             handling ensures scalability and smooth interaction. Unit tests for components used Jest.`,
         images:[{
-            image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
-            altTag: 'Tiger in the forest',
+            image: false,
+            altTag: ''
         },
         {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
+            image: false,
+            altTag: ''
         }
         ],
         languages: [
@@ -101,12 +98,12 @@ const projects = [
             providing a seamless experience. The app also incorporates OAuth for Spotify authentication, making it 
             easy for users to access and manage their music libraries directly through the app.`,
         images:[{
-            image: '',
-            altTag: 'Tiger in the forest',
+            image: false,
+            altTag: ''
         },
         {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
+            image: false,
+            altTag: ''  
         }
         ],
         languages: [
@@ -129,12 +126,12 @@ const projects = [
             Additionally, the checkout process collects delivery details and uses the Google Maps API for location display. 
             It's designed to demonstrate separating frontend and backend functionalities in web development.`,
         images:[{
-            image: '',
-            altTag: 'Tiger in the forest',
+            image: false,
+            altTag: ''
         },
         {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
+            image: false,
+            altTag: ''  
         }
         ],
         languages: [
@@ -157,12 +154,12 @@ const projects = [
             The database structure includes linked tables for books and authors, enabling organized data retrieval. 
             The app also features sorting options for books, authors, and genres.`,
         images:[{
-            image: '',
-            altTag: 'Tiger in the forest',
+            image: false,
+            altTag: ''
         },
         {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
+            image: false,
+            altTag: '' 
         }
         ],
         languages: [
@@ -183,12 +180,12 @@ const projects = [
             an Oxford-based charity that raises money to support grassroots projects in Southern Africa. 
             I put my web development skills to use here too. We are currently redesigning and developing the charity's website.`, 
         images:[{
-            image: "https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg",
-            altTag: 'Tiger in the forest',
+            image: false,
+            altTag: ''
         },
         {
-            image: "https://static.vecteezy.com/system/resources/thumbnails/023/148/124/small/royal-bengal-tiger-see-the-target-photo.jpg",
-            altTag: 'Tiger in the forest',  
+            image: false,
+            altTag: ''  
         }
         ],
         languages: [

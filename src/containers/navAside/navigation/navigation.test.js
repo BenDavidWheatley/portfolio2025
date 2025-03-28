@@ -16,9 +16,5 @@ describe('The languages Component', () => {
     expect(container.className).toContain(Style.navigationContainer)
   })
 
-  test('About has been clicked', () => {
-    render(<Navigation />);
-    const clicke
-  })
   
 });
