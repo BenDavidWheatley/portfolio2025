@@ -60,10 +60,10 @@
     animation: colorChange 2s ease-in 1s forwards;
 }
 .subheaderAnimation {
-    animation: headerTwo 3.2s ease-in-out;
+    animation: headerTwo 3.2s ease-in-out forwards;
 }
 .mainHeaderAnimation {
-    animation: mainHeader 3.2s ease-in-out;
+    animation: mainHeader 3.2s ease-in-out forwards;
 }
 
 /********* Header Animations for desktop *********/
@@ -73,8 +73,8 @@
         color: #101116;
     }
     40%{
-            background-color: #101116;
-            color: #101116;
+        background-color: #101116;
+        color: #101116;
         
     }
     100%{
@@ -109,14 +109,14 @@
     60%{
         position: absolute;
         width: 348px;
-        top: 30px;
-        left: 30px;
+        top: 60px;
+        left: calc(((100vw - 1440px) / 2) + 25px) ;
     }
     100% {
         position: absolute;
         width: 348px;
-        top: 30px;
-        left: 30px;
+        top: 60px;
+        left: calc(((100vw - 1440px) / 2) + 25px) ;
     }
 }
 
@@ -136,14 +136,14 @@
     80%{
         position: absolute;
         width: 244px;
-        top: 88px;
-        left: 30px;
+        top: 118px;
+        left: calc(((100vw - 1440px) / 2) + 28px) ;
     }
     100%{
         position: absolute;
         width: 244px;
-        top: 88px;
-        left: 30px;
+        top: 118px;
+        left: calc(((100vw - 1440px) / 2) + 28px) ;
     }
 }
 

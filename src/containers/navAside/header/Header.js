@@ -7,7 +7,6 @@ function Header() {
     const entered = useSelector(state => state.enteredReducer.value); 
     const dispatch = useDispatch();
 
-    console.log(entered + ' from header');
     return (
         <section 
             className={entered ? '': Style.headerSection} 
