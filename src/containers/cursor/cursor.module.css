@@ -11,6 +11,7 @@
   z-index: 9999;
 }
 
+
 .cursorHover {
   background-color: rgba(64, 224, 208, 0.9); 
   box-shadow: 0 0 40px 20px rgba(64, 224, 208, 0.7);
